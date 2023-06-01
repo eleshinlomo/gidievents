@@ -7,16 +7,18 @@
     <title>Wedding Planner</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
 <div class="container">
-    
-    <header>
+
+
+    <header id="top">
 
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             </nav>
 
@@ -25,7 +27,59 @@
     </div>
     </header>
 
-    <main>
+
+<main>
+
+        <section id="services" class="section-two">
+           <h2>REQUEST SERVICES</h2>
+
+           <div class="service-type">
+            <div>
+                <img src="./assets/canon_camera.png" alt="service type" class="img"/> 
+                <button>BOOK A PHOTOGRAPHER</button>
+            </div>
+            <div><img src="./assets/black_woman_in_wedding_gown.png" alt="service type" class="img"/> 
+                <button>BOOK A WEDDING GOWN</button>
+            </div>
+
+            <div>
+                <img src="./assets/camera.png" alt="service type" class="img"/> 
+                <button>BOOK A VIDEOGRAPHER</button>
+            </div>
+
+            </div>
+            
+
+        </section>
+
+
+
+        <section  class="section-one">
+    
+            <div class="text-box" id="about">
+
+                <div>
+                    <p>At Gidi Event, we understand that every event is unique and deserves to be a truly 
+                    unforgettable experience. We take pride in our ability to bring your vision to life, whether it's an enchanting wedding, a joyous birthday celebration, or any other special occasion. Our team of experienced event planners works closely with you to understand your preferences, style, and expectations. </p>
+                </div>
+        
+                <div>
+                    <p>Planning and executing an event can be a daunting and time-consuming task. At Gidi Event, we aim to relieve you of the stress and hassle of event management, allowing you to fully enjoy your special day. Our professional event planners handle all the intricate details, from vendor selection and negotiations to logistics management and on-site coordination.</p>
+                </div>
+        
+                <div>
+                    <p>
+                        At Gidi Event, we believe that exceptional service and attention to detail are the cornerstones of a successful event. We are dedicated to delivering personalized service that caters to your specific needs, preferences, and budget. Our team takes the time to understand your vision, 
+                        goals, and expectations, 
+                        ensuring that every element of your event reflects your unique style and personality.</p>
+                </div>
+
+                </div>
+        </section>
+
+
+        <section id="contact" class="section-three">
+            <h2>Got A Question?</h2>
         <div class="form-content">
         <form>
             <input placeholder="Name" />
@@ -35,15 +89,43 @@
             <button>Submit</button>
         </form>
     </div>
+</section>
+
+<!-- section four -->
+
+<section class="section-four">
+
+    <div class="service-type">
+        <div>
+            <img src="./assets/dj_mixer.png" alt="service type" class="img"/> 
+            <button>BOOK A DJ</button>
+        </div>
+        <div><img src="./assets/event_venue.png" alt="service type" class="img"/> 
+            <button>BOOK A FOOD VENDOR</button>
+        </div>
+
+        <div>
+            <img src="./assets/balloon.png" alt="service type" class="img"/> 
+            <button>BOOK A VENUE</button>
+        </div>
+
+        </div>
+
+</section>
+
+
     </main>
+    
+
 
     <footer>
         <p>Copyright 2023</p>
         <p>Powered By <a href="https://myafros.com">My Afros</a></p>
+        <a href="#top">TOP ^</a>
     </footer>
-
-</div>
-<body>
     
+
+
+    </div>
 </body>
 </html>

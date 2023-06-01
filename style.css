@@ -1,13 +1,41 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
-:root{
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
 
-    margin: 0;
-    padding: 0;
-    
+    to{
+        opacity: 1;
+    }
+  }
 
-}
+  ul{
+    text-decoration: none;
+    list-style: none;
+  }
+
+  li{
+
+    text-decoration: none;
+    list-style: none;
+
+  }
+
+  a{
+    text-decoration: none;
+    list-style: none;
+    color: blue;
+  }
+
+  .img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
 
 .container{
     display: grid;
@@ -15,30 +43,70 @@
     grid-template-rows: auto 1fr auto;
     grid-auto-flow: row;
     overflow: hidden;
-    width: 100%;
     height: 100%;
-    background-color: red;
+    width: 100%;
+    animation: opacity 2s ease 0s;
+    
+    
+}
+
+.section-one{
+
+    margin: 1rem 0;
+
+    animation: opacity 2s ease 0s;
     
 }
 
 header{
     
-    height: 4rem;
     width: auto;
     font-family: 'Bruno Ace SC', cursive;
     color: red;
+    padding: 1rem 0;
+    text-align: center;
+
     
 }
 
 nav{
-     height: 3rem;
-     width: auto;
-     margin-right: 2rem;
-     
+    margin: 0 2rem;
+    text-align: center;
+   }
+
+
+   
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    flex-shrink: auto;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    color: red;
+    gap: 2rem;
+    
+}
+
+li{
+    display: block;
+    background-color: white;
+    line-height: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40px;
+    width: 5rem;
+    color: red;
+    text-align: center;
+    
+    
 }
 
 .hero{
-    height: 35rem;
+    height: 25rem;
     width: auto;
     background-image: url('https://cdn.pixabay.com/animation/2023/04/24/21/55/21-55-17-115_512.gif');
     background-repeat: repeat;
@@ -48,11 +116,7 @@ nav{
     border: 5px solid white;
     background-color: transparent;
     background-blend-mode: hard-light;
-    text-align: center;
-
-    
-
-    
+    text-align: center;  
 }
 
 .hero h1{
@@ -61,13 +125,69 @@ nav{
 
 }
 
+
 main{
     display: block;
     width: 100%;
+    text-align: center;
     overflow: hidden;
-    
+}
+
+.text-box{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 0 3rem;
+    color: black;
+    margin: 1rem 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.text-box > * {
+    background-color: rgb(238, 60, 95);
+    font-weight: bold;
+    color: white;
+    box-shadow: black;
+    border-radius: 30px;
+    margin: 0 2rem;
+    width: auto;
+    padding: 2rem 1rem;
+}
+
+.section-two{
+
+    text-align: center;
+    color: white;
+}
+
+.service-type{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto auto;
+text-align: center;
+gap: 1rem;
     
 }
+
+.service-type > * {
+    padding: 0 1rem;
+    width: auto;
+    overflow: hidden;
+    
+}
+
+.service-type button{
+    border-radius: 50px;
+    height: auto;
+    padding: 1rem 1rem;
+    font-weight: bolder;
+}
+
+
+
+
 
 .form-content{
     height: 20rem;
@@ -75,13 +195,11 @@ main{
 }
 
 
-
 .form-content form{
     
     display: block;
-    margin: auto;
     margin-left: auto;
-    margin-top: 40rem;
+    margin-top: 2rem;
 }
 
 
@@ -98,7 +216,7 @@ form input{
     display: block;
     margin: 1rem auto;
     height: 2rem;
-    width: 30rem;
+    width: 20rem;
     text-align: center;
     border-radius: 10px;
 }
@@ -114,72 +232,82 @@ form textarea{
     
 }
 
+
+
 body{
 
-    
-    height: 100%;
+    height: vh;
     width: 100%;
-    
-    
-    
-}
-
-ul{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-basis: 100%;
-    flex-shrink: auto;
-    width: auto;
-    justify-content: center;
-    align-content: center;
-    text-decoration: none;
-    list-style: none;
-    overflow: hidden;
-    
-    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(red, crimson, transparent);
+    scroll-behavior: smooth;
     
 }
 
-li{
-    display: block;
-    background-color: white;
-    line-height: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 40px;
-    width: 5rem;
-    color: black;
-    text-align: center;
-    
-    
-}
+
+
 
 footer{
     display: block;
-    margin-top: 8rem;
+    margin-top: 3rem;
+    padding: 1rem 0;
     text-align: center;
-    background-color: rgba(239, 232, 232, 0.988);
+    color: white;
+    background-color: red;
 }
 
-@media (max-width: 570px){
+@media (max-width: 1159px){
     .container{
         display: block;
-        margin: 0 auto;
         overflow: hidden;
     }
 
-   nav{
-    width: auto;
-    height: 3rem;
-    
-
-   }
+  
 
    header{
 
     width: auto;
-    height: 3rem;
+    text-align: center;
 
    }
+
+   .hero{
+    height: 20rem;
+   }
+
+   .text-box{
+    display: block;
+    width: auto;
+    padding: 0 1rem;
+   }
+
+   .text-box > * {
+    width: auto;
+    margin: 1rem 0;
+    overflow: hidden;
+   }
+
+   .service-type{
+    display: block;
+    width: auto;
+   }
+
+   .service-type > * {
+
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    width: auto;
+   }
+
+  
+   .form-content form{
+    
+    display: block;
+    margin-left: auto;
+    margin-top: 2rem;
+}
 
     .form-content form{
         display: block;
