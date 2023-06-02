@@ -11,12 +11,12 @@
     }
   }
 
-  ul{
+  .nav-item{
     text-decoration: none;
     list-style: none;
   }
 
-  li{
+  .nav-item > * {
 
     text-decoration: none;
     list-style: none;
@@ -30,8 +30,8 @@
   }
 
   .img{
-    height: 70%;
-    width: 100%;
+    height: 100%;
+    width: auto;
     object-fit: cover;
   }
 
@@ -42,7 +42,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-auto-flow: row;
-    overflow: hidden;
     height: 100%;
     width: 100%;
     animation: opacity 2s ease 0s;
@@ -71,6 +70,7 @@ header{
 }
 
 nav{
+    display: block;
     margin: 0 2rem;
     text-align: center;
    }
@@ -127,12 +127,7 @@ li{
 }
 
 
-main{
-    display: block;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-}
+
 
 .text-box{
     display: grid;
@@ -157,29 +152,37 @@ main{
     padding: 2rem 1rem;
 }
 
-.section-two{
-
+main{
+    display: block;
+    width: 100%;
     text-align: center;
+    overflow: hidden;
     color: white;
+}
+
+.section-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    width: auto;
+    padding: 0 1rem;
     
+
 }
 
 .service-type{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: auto auto auto;
-text-align: center;
-gap: 1rem;
+    text-align: center;
+}
+
+
+
+.img-wrapper{
+ height: 15rem;
+ width: auto;
     
 }
 
-.service-type > * {
-    height: 15rem;
-    padding: 0 1rem;
-    width: auto;
-    overflow: hidden;
-    
-}
+
 
 
 
@@ -188,6 +191,7 @@ gap: 1rem;
     height: auto;
     padding: 1rem 1rem;
     font-weight: bolder;
+    margin-bottom: 2rem;
 }
 
 
@@ -294,16 +298,8 @@ footer{
     overflow: hidden;
    }
 
-   .service-type{
+   .section-two{
     display: block;
-    width: auto;
-   }
-
-   .service-type > * {
-
-    margin: 1rem 0;
-    padding: 1rem 1rem;
-    width: auto;
    }
 
   
