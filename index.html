@@ -30,13 +30,30 @@
             
             </nav>
 
-            <div class="hero">
+    <div class="hero">
+                <div class="video-container">
+                <video src="./assets/wedding_vid.mp4" muted loop autoplay class="video"></video>
+                </div>
         <h1>GIDI Event Planner is here</h1>
     </div>
     </header>
 
 
 <main>
+
+
+    <!-- <section class="response-form">
+        <div class="form-overlay">
+            <form>
+                <input placeholder="Your name" />
+                <input placeholder="Your phone number" />
+                <textarea placeholder="Write your message"></textarea>
+            </form>
+            <button>BOOK</button>
+            <button id="close-form" >Close</button>
+        </div>
+    </section> -->
+    
     <h2>REQUEST SERVICES</h2>
         <section id="services" class="section-two">
            
@@ -46,21 +63,21 @@
                 <div class="img-wrapper">
                 <img src="./assets/canon_camera.png" alt="service type" class="img"/> 
                 </div>
-                <button>BOOK A PHOTOGRAPHER</button>
+                <button id="photographer">BOOK A PHOTOGRAPHER</button>
             </div>
 
             <div class="service-type">
             <div class="img-wrapper">
             <img src="./assets/wedding_gown.png" alt="service type" class="img"/> 
             </div>
-                <button>BOOK A WEDDING GOWN</button>
+                <button id="wedding-gown">BOOK A WEDDING GOWN</button>
             </div>
 
             <div class="service-type">
                 <div class="img-wrapper">
                 <img src="./assets/camera.png" alt="service type" class="img"/> 
                 </div>
-                <button>BOOK A VIDEOGRAPHER</button>
+                <button id="videographer">BOOK A VIDEOGRAPHER</button>
             </div>
 
             
@@ -104,8 +121,13 @@
     
             <button>Submit</button>
         </form>
+
     </div>
 </section>
+
+
+
+
 
 <!-- section two continuation -->
 
@@ -115,7 +137,7 @@
         <div class="img-wrapper">
             <img src="./assets/dj_mixer.png" alt="service type" class="img"/> 
             </div>
-            <button>BOOK A DJ</button>
+            <button id="dj">BOOK A DJ</button>
         </div>
 
         <div class="service-type">
@@ -123,7 +145,7 @@
             <div class="img-wrapper">
            <img src="./assets/garnished_food.png" alt="service type" class="img"/>
             </div> 
-            <button>BOOK A FOOD VENDOR</button>
+            <button id="food-vendor">BOOK A FOOD VENDOR</button>
 
         </div>
 
@@ -133,7 +155,7 @@
             <div class="img-wrapper">
             <img src="./assets/balloon.png" alt="service type" class="img"/> 
             </div>
-            <button>BOOK A VENUE</button>
+            <button id="venue">BOOK A VENUE</button>
 
         </div>
 
@@ -155,5 +177,6 @@
 
 
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
