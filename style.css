@@ -23,10 +23,10 @@
 
   }
 
-  a{
+  .nav-item a{
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: white;
   }
 
   .img{
@@ -291,11 +291,6 @@ form textarea{
     animation: opacity 1s ease 0s;
 
 }
-
-
-
-
-
 
 
 
