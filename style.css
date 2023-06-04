@@ -26,13 +26,20 @@
   a{
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: black;
   }
 
   .img{
     height: 100%;
     width: auto;
     object-fit: cover;
+  }
+
+  .logo{
+    height: 5rem;
+    width: 8rem;
+    padding-bottom: 1rem;
+   
   }
 
 
@@ -45,7 +52,7 @@
     grid-auto-flow: row;
     height: 100%;
     width: 100%;
-    animation: opacity 2s ease 0s;
+    animation: opacity 1s ease 0s;
     overflow: hidden;
     
     
@@ -63,33 +70,34 @@ header{
     
     width: auto;
     font-family: 'Bruno Ace SC', cursive;
-    color: red;
     padding: 1rem 0;
     text-align: center;
+    color: red;
 
     
 }
 
 nav{
-    display: block;
-    margin: 0 2rem;
+    display: flex;
     text-align: center;
    }
 
 
    
 ul{
+    
     display: flex;
     flex-wrap: nowrap;
     flex-basis: 100%;
     flex-shrink: auto;
     width: auto;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-end;
+    align-content: flex-end;
     text-decoration: none;
     list-style: none;
     overflow: hidden;
     gap: 2rem;
+    padding: 0 1rem;
     
 }
 
@@ -207,6 +215,8 @@ main{
     padding: 5px 1rem;
     font-weight: bolder;
     text-align: center;
+    margin: 4px 0;
+    color: black !important;
     
 }
 
@@ -258,35 +268,34 @@ form textarea{
 }
 
 .response-form{
-
-    min-height: 100vh;
+    height: 100%;
+    width: 100%;
     position: relative;
-    background-color: #ffc0cb;
+    background-color: crimson;
+    color: white;
     animation: opacity 1s ease 0s;
     text-align: center;
+    z-index: 1;
+    background-image: url('./assets/gidi_events_logo.png');
+    background-blend-mode: multiply;
+    padding: 1rem 1rem;
    
 }
 
 .form-overlay{
     
     position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    box-sizing: border-box;
-    margin: 20rem 0;
-    z-index: 2;
+    height: 100%;
+    width: 100%;
+    animation: opacity 1s ease 0s;
 
 }
 
 
 
-.close-dj form input{
-    width: 6rem;
-}
 
-.close-dj form textarea{
-    width: 12rem;
-}
+
+
 
 
 
@@ -307,7 +316,6 @@ body{
 
 footer{
     display: block;
-    margin-top: 3rem;
     padding: 1rem 0;
     text-align: center;
     color: white;
@@ -330,7 +338,7 @@ footer{
    }
 
    .hero{
-    height: 20rem;
+    height: 30rem;
    }
 
    .text-box{
@@ -355,17 +363,14 @@ footer{
     display: block;
     margin-left: auto;
     margin-top: 2rem;
+    width: auto;
 }
 
-    .form-content form{
-        display: block;
-        
-        width: auto;
-    }
 
     .form-content form button{
         height: 25px;
         width: 4rem;
+        
     }
 
     .form-content form input{
@@ -376,6 +381,38 @@ footer{
     .form-content form textarea{
         width: auto;
         padding: 2rem 2rem;
+    }
+
+    .response-form{
+       position: relative;
+        height: 100vh;
+        width: auto;
+        z-index: 3;
+    
+    }
+
+    .form-overlay{
+        position: absolute;
+        height: 100%;
+        right: 0;
+        left: 0;
+        
+    }
+
+    .response-form form{
+        margin-top: 10rem;
+        width: auto;
+        text-align: center;
+        
+    }
+
+    .response-form form textarea{
+        width: 14rem;
+        height: 10rem;
+    }
+
+    .response-form form input{
+        width: auto;
     }
 
     footer{

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon" href="./favicon.ico" />
     <title>Wedding Planner</title>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,8 +16,11 @@
     <header id="top">
 
         <nav>
-        
+            <a href="index.html" class="logo"><img src="./assets/gidi_events_logo.png" class="img"/></a> 
+
             <ul class="nav-item">
+                
+
                 <li><a href="index.html">Home</a> </li>
                 
 
@@ -42,8 +46,9 @@
 <main>
 
 
-    <!-- <section class="response-form">
+    <section id="response-form" class="response-form">
         <div class="form-overlay">
+            <h3>Enter Your Booking Details and We'll be in touch.</h3>
             <form>
                 <input placeholder="Your name" />
                 <input placeholder="Your phone number" />
@@ -52,7 +57,7 @@
             <button>BOOK</button>
             <button id="close-form" >Close</button>
         </div>
-    </section> -->
+    </section>
     
     <h2>REQUEST SERVICES</h2>
         <section id="services" class="section-two">
@@ -137,7 +142,7 @@
         <div class="img-wrapper">
             <img src="./assets/dj_mixer.png" alt="service type" class="img"/> 
             </div>
-            <button id="dj">BOOK A DJ</button>
+            <button id="dj"><a href="#response-form">BOOK A DJ</a></button>
         </div>
 
         <div class="service-type">
@@ -145,7 +150,7 @@
             <div class="img-wrapper">
            <img src="./assets/garnished_food.png" alt="service type" class="img"/>
             </div> 
-            <button id="food-vendor">BOOK A FOOD VENDOR</button>
+            <button id="food-vendor"><a href="#response-form">BOOK A FOOD VENDOR</a></button>
 
         </div>
 
@@ -155,7 +160,7 @@
             <div class="img-wrapper">
             <img src="./assets/balloon.png" alt="service type" class="img"/> 
             </div>
-            <button id="venue">BOOK A VENUE</button>
+            <button id="venue"><a href="#response-form">BOOK A VENUE</a></button>
 
         </div>
 
