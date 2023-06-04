@@ -268,6 +268,7 @@ form textarea{
 }
 
 .response-form{
+    display: none;
     height: 100%;
     width: 100%;
     position: relative;
@@ -384,7 +385,7 @@ footer{
     }
 
     .response-form{
-       display: none;
+
        position: relative;
         height: 100vh;
         width: auto;
