@@ -196,6 +196,13 @@ main{
     animation: opacity 1s ease 0s;
 }
 
+.service-type a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-weight: bold;
+}
+
 
 
 .img-wrapper{
